@@ -16,14 +16,21 @@ import {
   X,
 } from "lucide-react";
 
-import heroHall from "@/assets/hero-hall.jpg";
-import venueMain from "@/assets/venue-main.jpg";
-import gallery1 from "@/assets/gallery-1.jpg";
-import gallery2 from "@/assets/gallery-2.jpg";
-import gallery3 from "@/assets/gallery-3.jpg";
-import gallery4 from "@/assets/gallery-4.jpg";
-import gallery5 from "@/assets/gallery-5.jpg";
-import gallery6 from "@/assets/gallery-6.jpg";
+import ballroomAsset from "@/assets/photos/ballroom.jpg.asset.json";
+import facadeGateAsset from "@/assets/photos/facade-gate.jpg.asset.json";
+import facadeNightAsset from "@/assets/photos/facade-night.jpg.asset.json";
+import loungeAsset from "@/assets/photos/lounge.jpg.asset.json";
+import staircaseAsset from "@/assets/photos/staircase.jpg.asset.json";
+import courtyardAsset from "@/assets/photos/courtyard.jpg.asset.json";
+
+const heroHall = ballroomAsset.url;
+const venueMain = facadeGateAsset.url;
+const gallery1 = loungeAsset.url;
+const gallery2 = staircaseAsset.url;
+const gallery3 = ballroomAsset.url;
+const gallery4 = courtyardAsset.url;
+const gallery5 = facadeNightAsset.url;
+const gallery6 = facadeGateAsset.url;
 
 export const Route = createFileRoute("/")({
   head: () => ({
