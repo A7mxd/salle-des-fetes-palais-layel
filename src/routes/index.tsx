@@ -636,10 +636,10 @@ function Contact() {
                       Téléphone
                     </div>
                     <a
-                      href="tel:+213000000000"
+                      href="tel:+213554021807"
                       className="font-light hover:text-[var(--color-gold)] transition-colors"
                     >
-                      Contactez-nous via le formulaire
+                      0554 02 18 07
                     </a>
                   </div>
                 </li>
