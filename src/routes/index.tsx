@@ -821,7 +821,7 @@ function Footer() {
           </p>
           <div className="mt-5 flex gap-3">
             <a
-              href="https://www.facebook.com/"
+              href="https://www.facebook.com/profile.php?id=100075888410027"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
