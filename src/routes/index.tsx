@@ -74,7 +74,23 @@ function Index() {
       <Gallery />
       <Contact />
       <Footer />
+      <FloatingFacebook />
     </div>
+  );
+}
+
+/* ---------- Floating Facebook ---------- */
+function FloatingFacebook() {
+  return (
+    <a
+      href="https://www.facebook.com/profile.php?id=100075888410027"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Facebook"
+      className="fixed bottom-6 right-6 z-50 inline-flex h-12 w-12 items-center justify-center rounded-full bg-[var(--color-gold)] text-[var(--color-plum)] shadow-lg hover:bg-[var(--color-gold-soft)] hover:scale-110 transition-all duration-300"
+    >
+      <Facebook size={22} />
+    </a>
   );
 }
 
