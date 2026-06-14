@@ -727,10 +727,10 @@ function Contact() {
                 className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-5"
               >
                 <input type="hidden" name="form-name" value="reservation" />
-                <Field label="Nom complet" name="name" required />
+                <Field label="Nom complet" name="nom-complet" required />
                 <Field
                   label="Numéro de téléphone"
-                  name="phone"
+                  name="telephone"
                   type="tel"
                   required
                 />
@@ -739,7 +739,7 @@ function Contact() {
                     Type d'événement
                   </label>
                   <select
-                    name="event"
+                    name="type-evenement"
                     required
                     className="w-full bg-transparent border-b border-[var(--color-plum)]/30 py-3 text-[var(--color-plum)] focus:outline-none focus:border-[var(--color-gold)] transition-colors"
                   >
