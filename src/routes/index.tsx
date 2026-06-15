@@ -755,17 +755,9 @@ function Contact() {
                 </div>
               </form>
 
-              {toastVisible && (
-                <div className="mt-6 border border-[var(--color-gold)] bg-[var(--color-gold)]/10 p-4 text-sm text-[var(--color-plum)] animate-fade-up">
-                  ✦ Merci ! Votre demande a bien été envoyée. Nous vous
-                  recontactons très vite.
-                </div>
-              )}
-              {sent && !toastVisible && (
-                <div className="mt-6 text-sm text-[var(--color-plum)]/60">
-                  Votre demande est enregistrée.
-                </div>
-              )}
+              <div className="mt-6 text-sm text-[var(--color-plum)]/60">
+                Votre demande sera envoyée directement à notre équipe.
+              </div>
             </div>
           </Reveal>
         </div>
