@@ -710,12 +710,10 @@ function Contact() {
               </p>
 
               <form
-                name="reservation"
-                data-netlify="true"
-                onSubmit={handleSubmit}
+                action="https://formspree.io/f/mpqebnyz"
+                method="POST"
                 className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-5"
               >
-                <input type="hidden" name="form-name" value="reservation" />
                 <Field label="Nom complet" name="nom-complet" required />
                 <Field
                   label="Numéro de téléphone"
