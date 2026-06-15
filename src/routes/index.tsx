@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useEffect, useRef, useState, type FormEvent } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   Sparkles,
   ShieldCheck,
@@ -607,17 +607,6 @@ function Gallery() {
 
 /* ---------- Contact ---------- */
 function Contact() {
-  const [sent, setSent] = useState(false);
-  const [toastVisible, setToastVisible] = useState(false);
-
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    setSent(true);
-    setToastVisible(true);
-    setTimeout(() => setToastVisible(false), 4000);
-    (e.target as HTMLFormElement).reset();
-  }
-
   return (
     <section id="contact" className="bg-[var(--color-ivory)]">
       <div className="grid lg:grid-cols-2">
@@ -721,12 +710,10 @@ function Contact() {
               </p>
 
               <form
-                name="reservation"
-                data-netlify="true"
-                onSubmit={handleSubmit}
+                action="https://formspree.io/f/mpqebnyz"
+                method="POST"
                 className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-5"
               >
-                <input type="hidden" name="form-name" value="reservation" />
                 <Field label="Nom complet" name="nom-complet" required />
                 <Field
                   label="Numéro de téléphone"
@@ -768,17 +755,9 @@ function Contact() {
                 </div>
               </form>
 
-              {toastVisible && (
-                <div className="mt-6 border border-[var(--color-gold)] bg-[var(--color-gold)]/10 p-4 text-sm text-[var(--color-plum)] animate-fade-up">
-                  ✦ Merci ! Votre demande a bien été envoyée. Nous vous
-                  recontactons très vite.
-                </div>
-              )}
-              {sent && !toastVisible && (
-                <div className="mt-6 text-sm text-[var(--color-plum)]/60">
-                  Votre demande est enregistrée.
-                </div>
-              )}
+              <div className="mt-6 text-sm text-[var(--color-plum)]/60">
+                Votre demande sera envoyée directement à notre équipe.
+              </div>
             </div>
           </Reveal>
         </div>
