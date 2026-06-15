@@ -607,17 +607,6 @@ function Gallery() {
 
 /* ---------- Contact ---------- */
 function Contact() {
-  const [sent, setSent] = useState(false);
-  const [toastVisible, setToastVisible] = useState(false);
-
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    setSent(true);
-    setToastVisible(true);
-    setTimeout(() => setToastVisible(false), 4000);
-    (e.target as HTMLFormElement).reset();
-  }
-
   return (
     <section id="contact" className="bg-[var(--color-ivory)]">
       <div className="grid lg:grid-cols-2">
